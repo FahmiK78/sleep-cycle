@@ -1,12 +1,50 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SleepCycle.ai</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SleepCycle.ai</title>
+  <link rel="icon" type="svg" href="/favicon.svg">
+  <style>
+    body {
+      background-image: url('twilight_background.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      margin: 0;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 10px; /* Adjust for desired curve */
+      padding: 20px;
+      margin: 20px auto; /* Center the card horizontally */
+      width: 300px; /* Adjust for desired width */
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
+  transform: translate(-50%, 0); /* Precise horizontal centering */
+  left: 50%;
+  position: absolute; /* To position the title */
+    }
+
+    .input-label {
+      font-size: 0.8rem; /* Adjust for desired label size */
+      margin-bottom: 5px;
+      color: #666; /* Adjust for desired label color */
+    }
+  </style>
+</head>
+<body>
+  <div id="app"></div>
+  <h1 id="main-title">SleepCycle.ai</h1>
+
+  <div class="card">
+    <label class="input-label">Enter your wake up time:</label>
+    <input type="text" placeholder="HH:MM">
+    <br>
+    <label class="input-label">Enter your desired sleep duration:</label>
+    <input type="text" placeholder="# hours">
+  </div>
+
+  <script type="module" src="/main.js"></script>
+</body>
 </html>

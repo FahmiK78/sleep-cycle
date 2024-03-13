@@ -94,3 +94,15 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+#main-title {
+  font-size: 3em;  /* Adjust font size as needed */
+  font-weight: bold;
+  text-align: center;
+  color: #d8d193;
+  position: absolute; /* To position the title */
+  top: 30%; 
+  left: 50%;
+  transform: translate(-50%, 0); /* Precise horizontal centering */
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+} 
